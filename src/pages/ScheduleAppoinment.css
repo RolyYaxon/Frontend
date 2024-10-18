@@ -1,0 +1,54 @@
+.schedule-appointment-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.schedule-appointment-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.schedule-appointment-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.schedule-appointment-container label {
+  font-size: 1.1rem;
+  color: #666;
+  text-align: left;
+}
+
+.schedule-appointment-container input[type="date"],
+.schedule-appointment-container input[type="time"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.schedule-appointment-container button {
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.schedule-appointment-container button:hover {
+  background-color: #0056b3;
+}
+
+.schedule-appointment-container button:active {
+  background-color: #004080;
+}

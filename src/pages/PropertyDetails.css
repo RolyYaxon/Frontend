@@ -1,0 +1,245 @@
+/* Estilos generales */
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.property-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+/* Contenedor principal */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+/* Sección de detalles de la propiedad */
+.property-section {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.property-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.property-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.property-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.property-details li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.property-details li::before {
+  content: '•';
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #ff6b6b;
+}
+
+.property-details button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.property-details button:hover {
+  background-color: #ff5252;
+}
+
+.property-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.property-images img {
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover; /* Mantiene la proporción de la imagen sin distorsionarla */
+}
+
+
+
+.property-images .map-placeholder {
+  width: 500px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.property-img{
+  width: 500px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+
+.property-img iframe{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+
+.property-images .property-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Sección de beneficios */
+.benefits-section {
+  background-color: #f4f4f4;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-section .benefit {
+  margin-bottom: 30px;
+}
+
+.benefits-section h2, .benefits-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.benefits-section p {
+  color: #666;
+}
+
+.secondary-benefits {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.benefits-section .benefit {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de opiniones */
+.opinions-section {
+  margin-top: 50px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.opinions-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.opinions-section .opinion {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.opinions-section .opinion p {
+  margin: 0;
+  font-style: italic;
+}
+
+
+@media (max-width: 1200px) {
+  
+
+  
+  .property-title {
+      margin-top: 100px;
+      font-size: 2.5rem; /* Ajusta el tamaño de la fuente para pantallas medianas */
+      line-height: 1.2; /* Ajusta la altura de la línea para mejor legibilidad */
+      margin-bottom: 20px; /* Asegura espacio entre el h1 y otros elementos */
+      object-fit: contain;
+      text-align: center; /* Centra el texto en pantallas más pequeñas */
+  }
+  
+  @media (max-width: 1200px) {
+    .property-info {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .property-img img {
+      max-width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+      height: auto;
+      object-fit: contain;
+      
+    }
+
+    .property-img{
+      object-fit: contain;
+      height: auto;
+      flex-direction: column;
+      max-width: 100%;
+
+    }
+    .property-images{
+      max-width: 100%;
+      flex-direction: column;
+    }
+  
+    .property-images .map-placeholder {
+      width: auto; /* Ajusta el mapa al ancho disponible */
+      height: auto;
+      object-fit: contain;
+      max-width: 100%;
+    }
+  
+    .benefits-section {
+      padding: 30px;
+    }
+  
+    .secondary-benefits {
+      flex-direction: column;
+    }
+  
+    .opinions-section {
+      padding: 30px;
+    }
+  }
+  
+}
